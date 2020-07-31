@@ -16,6 +16,7 @@ driver.get("localhost:3000")
 # in the login page, user enters all input fields with some invalid data and gets an alert
 
 # in the login page, user clicks on sign up link and navigates to the sign up page successfully
+# Test Script 1
 links = driver.find_elements_by_xpath("//a[@href]")
 links[0].click()
 sign_up = driver.find_element_by_tag_name("h2").text
@@ -29,6 +30,7 @@ assert "Password confirmation" in form[2].text
 
 
 # in the sign up page, user fills in all input fields with valid data and is redirected to a welcome page
+# Test Script 2
 driver.find_element_by_id("user_email").send_keys("foo@mail.com")  # make sure db doesnt have a user with same email
 driver.find_element_by_id("user_password").send_keys("123456")
 driver.find_element_by_id("user_password_confirmation").send_keys("123456")
