@@ -2,10 +2,8 @@ from selenium import webdriver
 
 # change executable_path value to path where your chromedirver is located
 driver = webdriver.Chrome(executable_path="/Users/ernesto/Downloads/chromedriver")
-
 # make sure simple_login app is running on localhost:3000 else change value
 driver.get("localhost:3000")
-
 
 # ******** Test Scenarios For Simple Login *********
 
