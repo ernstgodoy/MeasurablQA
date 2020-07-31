@@ -9,8 +9,6 @@ driver.get("localhost:3000")
 
 # ******** Test Scenarios For Simple Login *********
 
-# driver.find_element_by_name("user[email]").send_keys("guy@mail.com")
-# driver.find_element_by_name("user[password]").send_keys("123456")
 # user successfully navigates to the login page
 # in the log in page, user enters all input fields with valid data and clicks submit and logs in successfully and is redirected to a welcome page
 # in the log in page, user enters all input fields with valid data and checks the remember me checkbox and logs in successfully
